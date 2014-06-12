@@ -1,22 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
     using DesignPatterns.CreationalPatterns.AbstractFactory.Report;
     class Reports
     {
         public enum ReportTypes
         {
-            Base
+            Base,
+            User
         }
         public Reports()
         {
             Factory factory = new ConcreateObjectFactory();
             new Assembler().Assemble(factory);
+        }
+        public Reports(ReportTypes reportTypes)
+        {
+            Factory factory = null;
+            switch (reportTypes)
+            {
+                default:
+                    factory = new ConcreateObjectFactory();
+                    new Assembler().Assemble(factory);
+                    break;
+                case ReportTypes.Base:
+                    factory = new ConcreateObjectFactory();
+                    new Assembler().Assemble(factory);
+                    break;
+                case ReportTypes.User:
+                    factory = new DesignPatterns.CreationalPatterns.AbstractFactory.Report.User.Factory();
+                    new Assembler().Assemble(factory);
+                    break;
+                
+            }
         }
     }
 }

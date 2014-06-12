@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\Report.User\Factory.cs" />
+    <Compile Include="AbstractFactory\Report.User\Object.cs" />
     <Compile Include="AbstractFactory\Report\Assembler.cs" />
     <Compile Include="AbstractFactory\Report\ConcreateObject.cs" />
     <Compile Include="AbstractFactory\Report\ConcreateObjectFactory.cs" />
