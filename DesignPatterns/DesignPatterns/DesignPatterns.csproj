@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -100,6 +101,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.BehavioralPatterns\DesignPatterns.BehavioralPatterns.csproj">
+      <Project>{d6330b59-f7d3-4092-b27b-380aef1ba5d6}</Project>
+      <Name>DesignPatterns.BehavioralPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignPatterns.CreationalPatterns\DesignPatterns.CreationalPatterns.csproj">
+      <Project>{b22756d4-1833-4270-bcc8-c9e77b8ce163}</Project>
+      <Name>DesignPatterns.CreationalPatterns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignPatterns.Models\DesignPatterns.Models.csproj">
+      <Project>{59ad19a2-a52b-4649-a284-48824018f2a7}</Project>
+      <Name>DesignPatterns.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignPatterns.StructuralPatterns\DesignPatterns.StructuralPatterns.csproj">
+      <Project>{eb5aee15-943d-4b05-85f2-ca7ccbde41a7}</Project>
+      <Name>DesignPatterns.StructuralPatterns</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

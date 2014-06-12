@@ -30,14 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\Report\Assembler.cs" />
+    <Compile Include="AbstractFactory\Report\ConcreateObject.cs" />
+    <Compile Include="AbstractFactory\Report\ConcreateObjectFactory.cs" />
+    <Compile Include="AbstractFactory\Report\Factory.cs" />
+    <Compile Include="AbstractFactory\Report\Object.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AbstractFactory\" />
     <Folder Include="Builder\" />
     <Folder Include="FactoryMethod\" />
     <Folder Include="Prototype\" />
     <Folder Include="Singleton\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
