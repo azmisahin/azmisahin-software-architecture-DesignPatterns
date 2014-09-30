@@ -106,6 +106,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Api\DesignPatterns.Api.csproj">
+      <Project>{2d3cbfbe-2a47-4512-a1fd-af86021d1ecb}</Project>
+      <Name>DesignPatterns.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DesignPatterns.BehavioralPatterns\DesignPatterns.BehavioralPatterns.csproj">
       <Project>{d6330b59-f7d3-4092-b27b-380aef1ba5d6}</Project>
       <Name>DesignPatterns.BehavioralPatterns</Name>
