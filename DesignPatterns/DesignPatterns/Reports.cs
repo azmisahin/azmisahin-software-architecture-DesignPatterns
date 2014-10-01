@@ -3,6 +3,11 @@
     using DesignPatterns.CreationalPatterns.AbstractFactory.Report;
     class Reports
     {
+        public enum ReportHardware
+        {
+            Screen,
+            Printer
+        }
         public enum ReportTypes
         {
             Base,
@@ -19,19 +24,18 @@
             switch (reportTypes)
             {
                 default:
-                    factory = new ConcreateObjectFactory();
-                    new Assembler().Assemble(factory);
+                    factory = new ConcreateObjectFactory();                    
                     break;
+
                 case ReportTypes.Base:
-                    factory = new ConcreateObjectFactory();
-                    new Assembler().Assemble(factory);
+                    factory = new ConcreateObjectFactory();                    
                     break;
+
                 case ReportTypes.User:
-                    factory = new DesignPatterns.CreationalPatterns.AbstractFactory.Report.User.Factory();
-                    new Assembler().Assemble(factory);
+                    factory = new DesignPatterns.CreationalPatterns.AbstractFactory.Report.User.Factory();                    
                     break;
-                
             }
+            new Assembler().Assemble(factory);
         }
     }
 }

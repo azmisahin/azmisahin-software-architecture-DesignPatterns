@@ -7,13 +7,10 @@ namespace DesignPatterns
         {
             Reports reports = new Reports();
             Reports userReports = new Reports(Reports.ReportTypes.User);
-            System.Console.ReadLine();
 
             var ReportSelect = Fluent.Start()
                 .Type(new Reports(Reports.ReportTypes.Base))
                 .Assemble();
-            System.Console.ReadLine();
-
         }
     }
 }
