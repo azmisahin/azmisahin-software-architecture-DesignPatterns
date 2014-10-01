@@ -1,5 +1,4 @@
-﻿using DesignPatterns.Api.FluentInterface;
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
     class Program
     {
@@ -8,9 +7,11 @@ namespace DesignPatterns
             Reports reports = new Reports();
             Reports userReports = new Reports(Reports.ReportTypes.User);
 
-            var ReportSelect = Fluent.Start()
-                .Type(new Reports(Reports.ReportTypes.Base))
+            var reportPrint = Core<Reports>.Report()
+                .Type(Reports.ReportTypes.Base)
+                .Type(Reports.ReportHardware.Screen)
                 .Assemble();
+                
         }
     }
 }

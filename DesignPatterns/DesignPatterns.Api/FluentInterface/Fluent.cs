@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Api.FluentInterface
 {
-    public class Fluent
+    public class Fluent<T>
     {
         public static iFactory<object> Start()
         {

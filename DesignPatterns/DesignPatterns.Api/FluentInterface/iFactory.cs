@@ -2,7 +2,7 @@
 {
     public abstract class iFactory<T>
     {
-        public abstract iFactory<T> Type(T model);
+        public abstract iFactory<T> Type(T model);        
         public abstract T Assemble();
     }
 }

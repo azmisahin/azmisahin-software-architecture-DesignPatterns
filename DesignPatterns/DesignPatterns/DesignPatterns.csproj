@@ -81,6 +81,7 @@
     <StartupObject>DesignPatterns.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Api.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports.cs" />
