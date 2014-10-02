@@ -38,12 +38,12 @@
     <Compile Include="AbstractFactory\Report\Factory.cs" />
     <Compile Include="AbstractFactory\Report\Object.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\MultiThread.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Builder\" />
     <Folder Include="FactoryMethod\" />
     <Folder Include="Prototype\" />
-    <Folder Include="Singleton\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -11,7 +11,6 @@
                 .Type(Reports.ReportTypes.Base)
                 .Type(Reports.ReportHardware.Screen)
                 .Assemble();
-                
         }
     }
 }
