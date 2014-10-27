@@ -30,13 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Adapte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy\iViewer.cs" />
     <Compile Include="Proxy\StreamProxy.cs" />
     <Compile Include="Proxy\StreamViewer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adapter\" />
     <Folder Include="Bridge\" />
     <Folder Include="Composite\" />
     <Folder Include="Decorator\" />
@@ -45,6 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Models\DesignPatterns.Models.csproj">
+      <Project>{59ad19a2-a52b-4649-a284-48824018f2a7}</Project>
+      <Name>DesignPatterns.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
