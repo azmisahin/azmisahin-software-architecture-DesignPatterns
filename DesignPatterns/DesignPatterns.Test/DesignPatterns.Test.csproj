@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AbstractFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.Api\DesignPatterns.Api.csproj">

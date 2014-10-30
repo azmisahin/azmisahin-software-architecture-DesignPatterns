@@ -37,6 +37,12 @@
     <Compile Include="AbstractFactory\Report\ConcreateObjectFactory.cs" />
     <Compile Include="AbstractFactory\Report\Factory.cs" />
     <Compile Include="AbstractFactory\Report\Object.cs" />
+    <Compile Include="AbstractFactory\Sample\Report\Base.cs" />
+    <Compile Include="AbstractFactory\Sample\Report\Ogrenci.cs" />
+    <Compile Include="AbstractFactory\Sample\Report\Ogretmen.cs" />
+    <Compile Include="AbstractFactory\Sample\Report\Report.cs" />
+    <Compile Include="AbstractFactory\Sample\Report\Sinif.cs" />
+    <Compile Include="AbstractFactory\Sample\Sinav\Sinav.cs" />
     <Compile Include="FactoryMethod\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\MultiThread.cs" />
@@ -47,6 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AbstractFactory\Sample\Report\ClassDiagram.cd" />
+    <None Include="AbstractFactory\Sample\Sinav\ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
